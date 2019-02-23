@@ -1,25 +1,94 @@
 .top-content {
     width: 100%;
-    display: flex;
+    display: inline-grid;
+    grid-template-columns: auto 300px;
 
     .top-content-left {
-        width: 50%;
         display: flex;
         flex-direction: column;
 
         .heading {
-            height: 100%;
-            display: flex;
+            .center();
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            height: 100%;
         }
     }
-
     .top-content-right {
         img {
             border-bottom-right-radius: 15px;
             border-bottom-left-radius: 15px;
+        }
+    }
+}
+
+
+.main-content {
+    .content-container {
+        width: 100%;
+        display: flex;
+        margin-top: 25px;
+        .content-title {
+            width: 30%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: @accent-blue;
+            text-align: center;
+            // border: 1px solid black;
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+        }
+        .content {
+            width: 100%;
+            padding: 15px;
+            border-left: none;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+            background: @accent-grey;
+        }
+        .skills-content {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+    .inverted-content-container {
+        .content-title {
+            border-radius: 0 15px 15px 0;
+        }
+        .content {
+            order: -1;
+            border-radius: 15px 0 0 15px;
+            border-right: none;
+        }
+    }
+
+  
+    .portfolio-link {
+        margin-top: 25px;
+        display: flex;
+        justify-content: center;
+        
+        .left-bar {
+            .bar(30%, @accent-blue, white);
+        }
+
+        .right-bar {
+            .bar(30%, white, @accent-blue);
+        }
+
+        a {
+            text-align: center;
+            width: 40%;
+            text-decoration: none;
+            &:hover {
+                font-weight: bold;
+            }
+
+            &:visited {
+                text-decoration: none;
+                color: inherit;
+            }            
         }
     }
 }

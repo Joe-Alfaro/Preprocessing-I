@@ -1,29 +1,38 @@
 nav {
-        height: 50px;
-        width: 100%;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    // align-content: center;
+    align-items: stretch;
+    justify-content: space-around;
+    background: @accent-grey;
+    border-bottom-left-radius: 15px;
+    
+    a {
+        // height: 100%;
         display: flex;
         align-items: center;
-        justify-content: space-around;
-        background: @accent-grey;
-        border-bottom-left-radius: 15px;
-
-    .menu-button {
-        background: @accent-blue;
-        height: 30px;
-        width: 30px;
-        border-radius: 100%;
-        color: white;
-        padding-bottom: 8px;
+        text-decoration: none;
+        color: black;
         font-weight: bold;
-    }
+        padding: 0 15px;
 
-    .menu-button:hover {
-    cursor: pointer;
-    }
+        &:visited {
+            color: black;
+        }
+        
+        &:hover {
+            background-color: @accent-blue;
+            color: white;
+            cursor: pointer;
+
+    }    
+}
+
 
     img {
         height: 30px;
-        border-radius: 100%;
+        
     }
     .menu-content {
         display: none;
