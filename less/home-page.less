@@ -21,7 +21,6 @@
     }
 }
 
-
 .main-content {
     .content-container {
         width: 100%;
@@ -34,17 +33,24 @@
             align-items: center;
             background: @accent-blue;
             text-align: center;
-            // border: 1px solid black;
             border-top-left-radius: 15px;
             border-bottom-left-radius: 15px;
         }
         .content {
             width: 100%;
-            padding: 15px;
+            padding: 0 15px 15px;
             border-left: none;
             border-top-right-radius: 15px;
             border-bottom-right-radius: 15px;
             background: @accent-grey;
+            
+            .titles{
+                padding-top: 15px;
+                width: 100%;
+                display: inline-grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                font-weight: bold;
+            }
         }
         .skills-content {
             width: 100%;

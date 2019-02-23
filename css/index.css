@@ -214,11 +214,18 @@ nav .menu-content {
 }
 .main-content .content-container .content {
   width: 100%;
-  padding: 15px;
+  padding: 0 15px 15px;
   border-left: none;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   background: #cfcfcf;
+}
+.main-content .content-container .content .titles {
+  padding-top: 15px;
+  width: 100%;
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  font-weight: bold;
 }
 .main-content .content-container .skills-content {
   width: 100%;
