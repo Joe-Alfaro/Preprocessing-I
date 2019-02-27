@@ -3,6 +3,9 @@
     display: inline-grid;
     grid-template-columns: auto 300px;
 
+    @media (max-width:715px) {
+        grid-template-columns: auto;
+    }
     .top-content-left {
         display: flex;
         flex-direction: column;
@@ -12,7 +15,10 @@
             flex-direction: column;
             justify-content: center;
             height: 100%;
-
+            h1{
+                text-align: center;
+                flex-wrap: wrap;
+            }
             p {
                 padding-top: 15px;
                 width: 70%;
@@ -20,12 +26,19 @@
             ol {
                 list-style-type: decimal;
             }
+            @media (max-width:715px) {
+                padding: 15px 0;
+            }
         }
     }
     .top-content-right {
         img {
             border-bottom-right-radius: 15px;
             border-bottom-left-radius: 15px;
+        }
+
+        @media (max-width:715px) {
+            display: none;
         }
     }
 }
@@ -35,6 +48,9 @@
         width: 100%;
         display: flex;
         margin-top: 25px;
+        @media (max-width: 1000px) {
+            flex-direction: column;
+        }
         .content-title {
             width: 30%;
             display: flex;
@@ -44,6 +60,11 @@
             text-align: center;
             border-top-left-radius: 15px;
             border-bottom-left-radius: 15px;
+            @media (max-width: 1000px) {
+                width: 100%;
+                padding: 20px 0;
+                border-radius: 15px 15px 0 0;
+            }
         }
         .content {
             width: 100%;
@@ -53,6 +74,12 @@
             border-bottom-right-radius: 15px;
             background: @accent-grey;
             
+            @media (max-width: 1000px) {
+                width: 100%;
+                padding: 20px 0;
+                border-radius: 0 0 15px 15px;
+            }
+
             .titles{
                 width: 100%;
                 display: inline-grid;
@@ -77,15 +104,24 @@
     .inverted-content-container {
         .content-title {
             border-radius: 0 15px 15px 0;
+            
+            @media (max-width: 1000px) {
+                border-radius: 15px 15px 0 0;
+            }
         }
         .content {
             order: -1;
             border-radius: 15px 0 0 15px;
             border-right: none;
+            
+            @media (max-width: 1000px) {
+                order: 0;
+                border-radius: 0 0 15px 15px;
+            }
+            
         }
     }
 
-  
     .portfolio-link {
         margin-top: 25px;
         display: flex;
