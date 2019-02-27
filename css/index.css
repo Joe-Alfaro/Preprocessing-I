@@ -149,6 +149,14 @@ h3 {
   font-weight: bold;
   padding-top: 15px;
 }
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+a:visited {
+  color: black;
+}
 nav {
   height: 50px;
   width: 100%;
@@ -161,13 +169,7 @@ nav {
 nav a {
   display: flex;
   align-items: center;
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
   padding: 0 15px;
-}
-nav a:visited {
-  color: black;
 }
 nav a:hover {
   background-color: #5292FF;
@@ -177,8 +179,35 @@ nav a:hover {
 nav img {
   height: 30px;
 }
-nav .menu-content {
+nav .menu {
   display: none;
+}
+@media (max-width: 1000px) {
+  nav .menu {
+    display: block;
+    position: relative;
+    display: inline-block;
+  }
+  nav .menu .menu-button {
+    padding-top: 15px;
+  }
+  nav .menu:hover .menu-content {
+    display: block;
+  }
+}
+nav .menu .menu-content {
+  display: none;
+  position: absolute;
+  background: #cfcfcf;
+  z-index: 1;
+  min-width: 100%;
+  margin-top: 14px;
+}
+nav .menu .menu-content a {
+  padding-top: 5px;
+}
+nav .menu .menu-content a:last-of-type {
+  padding-bottom: 5px;
 }
 footer {
   margin-top: 25px;

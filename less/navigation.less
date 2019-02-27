@@ -10,20 +10,12 @@ nav {
     a {
         display: flex;
         align-items: center;
-        text-decoration: none;
-        color: black;
-        font-weight: bold;
         padding: 0 15px;
-
-        &:visited {
-            color: black;
-        }
         
         &:hover {
             background-color: @accent-blue;
             color: white;
             cursor: pointer;
-
         }    
     }
 
@@ -31,7 +23,42 @@ nav {
         height: 30px;
         
     }
-    .menu-content {
+    
+    .menu {
         display: none;
+        
+        @media (max-width: 1000px) {
+            display: block;
+            position: relative;
+            display: inline-block;
+
+            .menu-button {
+                padding-top: 15px;
+            }
+
+            &:hover {
+                .menu-content{
+                    display: block;
+                }
+            }    
+        }        
+    }
+
+        
+        .menu-content {
+            display:none;
+            position: absolute;
+            background: @accent-grey;
+            z-index: 1;
+            min-width: 100%;
+            margin-top: 14px;
+
+            a {
+                padding-top: 5px;
+                &:last-of-type {
+                    padding-bottom: 5px;
+                }
+            }
+        }
     }
 }
