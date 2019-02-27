@@ -10,7 +10,16 @@
         .heading {
             .center();
             flex-direction: column;
+            justify-content: center;
             height: 100%;
+
+            p {
+                padding-top: 15px;
+                width: 70%;
+            }
+            ol {
+                list-style-type: decimal;
+            }
         }
     }
     .top-content-right {
@@ -45,17 +54,24 @@
             background: @accent-grey;
             
             .titles{
-                padding-top: 15px;
                 width: 100%;
                 display: inline-grid;
                 grid-template-columns: 1fr 1fr 1fr;
-                font-weight: bold;
             }
         }
         .skills-content {
             width: 100%;
             display: flex;
             justify-content: space-around;
+        }
+
+        .interests-content {
+            display: flex;
+            justify-content: space-around;
+
+            div {
+                padding-left: 15px;
+            }
         }
     }
     .inverted-content-container {

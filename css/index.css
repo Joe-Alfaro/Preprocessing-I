@@ -139,11 +139,15 @@ body {
   margin: 0 auto;
 }
 h1 {
-  font-size: 5rem;
+  font-size: 7rem;
 }
 h2 {
   color: white;
   font-size: 2rem;
+}
+h3 {
+  font-weight: bold;
+  padding-top: 15px;
 }
 nav {
   height: 50px;
@@ -176,6 +180,41 @@ nav img {
 nav .menu-content {
   display: none;
 }
+footer {
+  margin-top: 25px;
+}
+footer nav {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-around;
+  background: #cfcfcf;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+footer nav a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  padding: 0 15px;
+}
+footer nav a:visited {
+  color: black;
+}
+footer nav a:hover {
+  background-color: #5292FF;
+  color: white;
+  cursor: pointer;
+}
+footer nav img {
+  height: 30px;
+}
+footer nav .menu-content {
+  display: none;
+}
 .top-content {
   width: 100%;
   display: inline-grid;
@@ -191,7 +230,15 @@ nav .menu-content {
   align-content: space-around;
   align-items: center;
   flex-direction: column;
+  justify-content: center;
   height: 100%;
+}
+.top-content .top-content-left .heading p {
+  padding-top: 15px;
+  width: 70%;
+}
+.top-content .top-content-left .heading ol {
+  list-style-type: decimal;
 }
 .top-content .top-content-right img {
   border-bottom-right-radius: 15px;
@@ -221,16 +268,21 @@ nav .menu-content {
   background: #cfcfcf;
 }
 .main-content .content-container .content .titles {
-  padding-top: 15px;
   width: 100%;
   display: inline-grid;
   grid-template-columns: 1fr 1fr 1fr;
-  font-weight: bold;
 }
 .main-content .content-container .skills-content {
   width: 100%;
   display: flex;
   justify-content: space-around;
+}
+.main-content .content-container .interests-content {
+  display: flex;
+  justify-content: space-around;
+}
+.main-content .content-container .interests-content div {
+  padding-left: 15px;
 }
 .main-content .inverted-content-container .content-title {
   border-radius: 0 15px 15px 0;
