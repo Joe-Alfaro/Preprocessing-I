@@ -3,6 +3,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Joe Alfaro</title>
 
@@ -15,148 +16,213 @@
 
 <body>
   <div class="container">
-    <header>
-      <nav>
-        <div class="menu">
-          <button>...</button>
-          <div class="menu-content">
-            <a href="#education-content">Education</a>
-            <a href="#technical-skills-content">Technical Skills</a>
-            <a href="">Portfolio</a>
-            <a href="#work-experience-content">Work Experience</a>
-            <a href="#interests-content">Interests</a>
+    <header>  
+      <div class="top-content">
+        <div class="top-content-left">
+          <nav>
+            <div class="menu">
+              <a class="menu-button">Menu</a>
+              <div class="menu-content" id ="menu-content">
+                <a href="#education-content">Education</a>
+                <a href="#skills-content">Technical Skills</a>
+                <a href="">Portfolio</a>
+                <a href="#experience-content">Work Experience</a>
+                <a href="#interests-content">Interests</a>
+              </div>
+            </div>
+            <a href="https://www.linkedin.com/in/joe-alfaro" target="_blank">Linkedin</a>
+            <a href="https://www.twitter.com/JoeAlfaro925" target="_blank">Twitter</a>
+            <a href="https://www.github.com/Joe-Alfaro" target="_blank">GitHub</a>
+            <a href="mailto:josephlalfaro@gmail.com">E-Mail</a>
+          </nav>
+          <div class="heading">    
+            <h1>Joe Alfaro</h1>
+            <p>Full stack web developer, woodworker, mechanic, maker. I hope this resume page and my portfolio page(which was designed by someone else) demonstrate two things:</p>
+            <ol>
+              <li>I love to code</li>
+              <li>I am not a designer 🙃</li>
+            </ol>
           </div>
         </div>
-
-        <a href="https://www.twitter.com/JoeAlfaro925" class="social-media1"><img src="images/twitter-icon.png" alt="twitter icon"></a>
-        <a href="https://www.github.com/Joe-Alfaro" class="social-media2"><img src="images/github-icon.png" alt="github icon"></a>
-        <a href="mailto:josephlalfaro@gmail.com" class="social-media3"><img src="images/email-icon.png" alt="email icon"></a>
-      </nav>    
-      
-      <div class="top-content"></div>
-        <section class="top-content-text">
-          <h1>Joe Alfaro</h1>
-          <p>(925)222-9842 || josephlalfaro@gmail.com</p>
-        </section>
-        <section class="top-content-image">
-          <img src="images/my-pic.png" alt="my mug">
-        </section>
+          <div class="top-content-right">
+            <img src="images/my-pic.png" alt="my mug">
+          </div>
+        </div>
       </div>
     </header>
 
     <div class="main-content">
-      <div class="education-content" id="eduction-content">
-      <h2>Education</h2>
-      <div class="lambda-school">
-        <p>
-          <strong class="place">Lambda School</strong> <strong class="location">Online</strong> <strong class="status">Currently Attending</strong><br>
-          Studied full stack web development and computer science.
-        </p>
+      <div class="content-container education-container" id="education-content">
+        <div class="content-title">
+          <h2>Education</h2>
+        </div>
+        <div class="content education-content">
+          <div class="lambda-school">
+            <div class="titles">
+              <h3>Lambda School</h3> 
+              <h3>Online</h3> 
+              <h3>Currently Attending</h3>
+            </div>
+            <p>
+              Studied full stack web development and computer science.
+            </p>
+          </div>
+          <div class="dev-bootcamp">
+            <div class="titles">
+              <h3>Dev Bootcamp</h3> 
+              <h3>San Francisco, CA</h3>
+              <h3>Graduated August '18</h3>
+            </div>
+            <p>
+              Studied full stack web development.
+            </p>
+          </div>
+          <div class="uti">
+            <div class="titles">
+              <h3>Universal Technical Institute</h3> 
+              <h3>Sacramento, CA</h3>  
+              <h3>Graduated October '11</h3>
+            </div>
+            <p>
+              Studied General Automotive, Nissan Accelerated Technician Training, and smog.
+            </p>
+          </div>
+          <div class="liberty high-school liberty-high-school"> 
+            <div class="titles">
+              <h3>Liberty High School</h3>
+              <h3>Brentwood, CA</h3> 
+              <h3>Graduated June '08</h3>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="dev-bootcamp">
-        <p>
-          <strong class="place">Dev Bootcamp</strong> <strong class="location">San Francisco, CA</strong> <strong class="status">Graduated August 2018</strong><br>
-          Studied full stack web development.
-        </p>
+        
+      <div class="content-container inverted-content-container skills-container" id="skills-content">
+        <div class="content-title">
+          <h2>Technical Skills</h2>
+        </div>
+        <div class="content skills-content">
+          <div class="programming-languages">
+            <h3>Programming</h3>
+            <ul>
+              <li>Ruby</li>
+              <li>Javascript</li>
+              <li>HTML</li>
+              <li>CSS</li>
+            </ul>
+          </div>
+          <div class="programming-frameworks">
+            <h3>Frameworks</h3>
+            <ul>
+              <li>Sinatra(Ruby)</li>
+              <li>Rails(Ruby)</li>
+            </ul>
+          </div>
+          <div class="javascript-libraries">
+            <h3>Javascript Libraries</h3> 
+            <ul>
+              <li>React.js</li>
+              <li>JQuery</li>
+              <li>AJAX</li>
+            </ul>
+          </div>
+          <div class="soft-skills">
+            <h3>Soft Skills</h3>
+            <ul>
+              <li>Good Listener</li>
+              <li>Follows Directions Well</li>
+              <li>Communicates Well</li>
+              <li>Independent Learner</li>
+            </ul>
+          </div>
+        </div>  
       </div>
-      <div class="uti">
-        <p>
-          <strong class="place">Universal Technical Institute</strong> <strong class="location">Sacramento, CA</strong> <strong class="status">Graduated October 2011</strong><br>
-          Studied General Automotive, Nissan Accelerated Technician Training, and smog.
-        </p>
+
+      <div class="portfolio-link">
+          <div class="left-bar"></div>
+          <a href="">Interested in what I'm working on? View my Portfolio!</a>
+          <div class="right-bar"></div>
       </div>
-      <div class="liberty high-school liberty-high-school">
-        <p>
-          <strong class="place">Liberty High School</strong> <strong class="location">Brentwood, CA</strong> <strong class="status">Graduated June 2008</strong><br>
-        </p>
+
+      <div class="content-container experience-container" id="experience-content">
+        <div class="content-title">
+          <h2>Work Experience</h2>
+        </div>
+        <div class="content experience-content">
+          <div class="door-dash">
+            <div class="titles">
+              <h3>DoorDash</h3>
+              <h3>Northern California</h3>
+              <h3>December '18 - Present</h3>
+            </div>
+            <p><strong>Dasher</strong> - Used dasher app to pickup and drop off user’s food orders in a timely manner. Set my own schedule and am able to work while I complete Lambda School.</p>
+          </div>
+          <div class="firestone">
+            <div class="titles">
+              <h3>Firestone Complete Auto Care</h3> 
+              <h3>Brentwood, CA</h3>	
+              <h3>November '17 to September '18</h3>
+            </div>
+            <p><strong>Lead Technician</strong> -  Automotive technician with the added responsibility of training new technicians and experienced technicians who were new to Firestone.</p>
+          </div>
+          <div class="roesbery">
+            <div class="titles">
+              <h3>Roesbery Car Care</h3> 
+              <h3>Walnut Creek, CA</h3> 
+              <h3>January '16 to May '17</h3>
+            </div>
+            <p><strong>Service Manager</strong> - Operated all operations of a three bay automotive shop. Managed staff, communicated with all customers, prepared and sold estimates for work, and developed safety procedures and meetings per OSHA inspections and recommendations.</p>
+          </div>
+          <div class="honda">
+            <div class="titles">
+              <h3>Walnut Creek Honda</h3> 
+              <h3>Walnut Creek, CA</h3> 
+              <h3>November '14 to January '16</h3>
+            </div>
+            <p>Automotive Technician – Diagnosed and repaired customer vehicles and new vehicles.</p>
+          </div>
+          <div class="speedee">
+            <div class="titles">
+              <h3>SpeeDee Midas</h3> 
+              <h3>Brentwood, CA</h3> 
+              <h3>May '13 to August '14</h3>
+            </div>
+            <p><strong>Assistant Manager</strong> – Helped to manage staff break times to keep the shop operating normally. Also performed all different position duties as needed.</p>
+          </div>
+          <div class="bermudez">
+            <div class="titles">
+              <h3>Bermudez Auto Service</h3> 
+              <h3>Brentwood, CA</h3>	
+              <h3>November '11 to April '13</h3>
+            </div>
+            <p><strong>Smog Technician</strong> - Training to become an automotive technician while performing office duties and performing smog checks.</p>
+          </div>
+        </div>
       </div>
       
-      <div class="technical-skills-content" id="technical-skills-content">
-        <h2>Technical Skills</h2>
-        <div class="programming-languages">
-          <h3>Programming</h3>
-          <ul>
-            <li>Ruby</li>
-            <li>Javascript</li>
-            <li>HTML</li>
-            <li>CSS</li>
-          </ul>
-        </div>
-        <div class="programming-frameworks">
-          <h3>Frameworks<h3>
-          <ul>
-            <li>Sinatra(Ruby)</li>
-            <li>Rails(Ruby)</li>
-          </ul>
-        </div>
-        <div class="javascript-libraries">
-          <h3>Javascript Libraries</h3> 
-          <ul>
-            <li>React.js</li>
-            <li>JQuery</li>
-            <li>AJAX</li>
-          </ul>
-        </div>
-        <div class="soft-skills">
-          <h3>Soft Skills</h3>
-          <ul>
-            Good Listener
-            Follows Directions Well
-            Communicates Well
-            Independent Learner
-          </ul>
-        </div>
+      <div class="content-container inverted-content-container interests-container" id="interests-content">
+      <div class="content-title">
+        <h2>Other Interests</h2>
       </div>
-
-      <h2>Interested in what I'm making? <a href="">View my Portfolio!</a></h2>
-
-      <div class="work-experience" id="work-experience-content">
-        <h2>Work Experience</h2>
-        <div class="door-dash">
-          <p>
-            <strong class="place">DoorDash</strong> <strong class="location">Northern California</strong> <strong class="status">December 2018 - Present</strong><br>
-            Dasher - Used dasher app to pickup and drop off user’s food orders in a timely manner. Set my own schedule and am able to work while I complete Lambda School.
-          </p>
+        <div class="content interests-content">
+          <div class="woodworking">
+            <h3>Woodworking</h3>
+            <p>I am a self taught woodworker and I enjoy making small gifts, furniture pieces, and home built-ins.</p>
+          </div>
+          <div class="making">
+            <h3>Maker</h3>
+            <p>Evolved from woodworking by adding other skills such as, electronics, programming, and metalworking/welding.</p>
+          </div>
         </div>
-        <div class="firestone">
-          <p>
-            <strong class="place">Firestone Complete Auto Care</strong> <strong class="location">Brentwood, CA</strong>	<strong class="status">November 2017 to September 2018</strong><br>
-            Lead Technician -  Automotive technician with the added responsibility of training new technicians and experienced technicians who were new to Firestone.
-          </p>
-        </div>
-        <div class="roesbery">
-          <p>
-            <strong class="place">Roesbery Car Care</strong> <strong class="location">Walnut Creek, CA</strong> <strong class="status">January 2016 to May 2017</strong><br>
-            Service Manager - Operated all operations of a three bay automotive shop. Managed staff, communicated with all customers, prepared and sold estimates for work, and developed safety procedures and meetings per OSHA inspections and recommendations.
-          </p>
-        </div>
-  
-        <div class="honda">
-          <p>
-            <strong class="place">Walnut Creek Honda</strong> <strong class="location">Walnut Creek, CA</strong> <strong class="status">November 2014 to January 2016</strong><br>
-            Automotive Technician – Diagnosed and repaired customer vehicles and new vehicles.
-          </p>
-        </div>
-        <div class="speedee">
-          <p>
-            <strong class="place">SpeeDee Midas</strong> <strong class="location">Brentwood, CA</strong> <strong class="status">May 2013 to August 2014</strong><br>
-            Assistant Manager – Helped to manage staff break times to keep the shop operating normally. Also performed all different position duties as needed.
-          </p>
-        </div>
-        <div class="bermudez">
-          <p>
-            <strong class="place">Bermudez Auto Service and Repair</strong> <strong class="location">Brentwood, CA</strong>	<strong class="status">November 2011 to April 2013</strong><br>
-            Smog Technician - Training to become an automotive technician while performing office duties and performing smog checks.
-          </p>
-        </div>
-      </div>
-      <div class="other-interests" id="interests-content">
-      <h2>Other Interests</h2>
-        <h3>Woodworking</h3>
-        <p>I am a self taught woodworker and I enjoy making small gifts, furniture pieces, and home built-ins.</p>
-        <h3>Maker</h3>
-        <p>Evolved from woodworking by adding other skills such as, electronics, programming, and metalworking/welding.</p>
       </div>
     </div>
   </body>
+  <footer>
+      <nav>
+          <a href="https://www.linkedin.com/in/joe-alfaro" target="_blank">Linkedin</a>
+          <a href="https://www.twitter.com/JoeAlfaro925" target="_blank">Twitter</a>
+          <a href="https://www.github.com/Joe-Alfaro" target="_blank">GitHub</a>
+          <a href="mailto:josephlalfaro@gmail.com">E-Mail</a>
+        </nav>
+  </footer>
 </html>
