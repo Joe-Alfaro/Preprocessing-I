@@ -138,6 +138,10 @@ body {
   max-width: 1024px;
   margin: 0 auto;
 }
+img {
+  max-width: 100%;
+  height: auto;
+}
 h1 {
   font-size: 7rem;
 }
@@ -163,7 +167,7 @@ nav {
   display: flex;
   align-items: stretch;
   justify-content: space-around;
-  background: #cfcfcf;
+  background: #D1D1C9;
   border-bottom-left-radius: 15px;
 }
 @media (max-width: 715px) {
@@ -177,7 +181,7 @@ nav a {
   padding: 0 15px;
 }
 nav a:hover {
-  background-color: #5292FF;
+  background-color: #636A41;
   color: white;
   cursor: pointer;
 }
@@ -203,7 +207,7 @@ nav .menu {
 nav .menu .menu-content {
   display: none;
   position: absolute;
-  background: #cfcfcf;
+  background: #D1D1C9;
   z-index: 1;
   min-width: 100%;
   margin-top: 14px;
@@ -223,7 +227,7 @@ footer nav {
   display: flex;
   align-items: stretch;
   justify-content: space-around;
-  background: #cfcfcf;
+  background: #D1D1C9;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
@@ -239,7 +243,7 @@ footer nav a:visited {
   color: black;
 }
 footer nav a:hover {
-  background-color: #5292FF;
+  background-color: #636A41;
   color: white;
   cursor: pointer;
 }
@@ -250,9 +254,9 @@ footer nav .menu-content {
   display: none;
 }
 .top-content {
-  width: 100%;
+  width: 1024px;
   display: inline-grid;
-  grid-template-columns: auto 300px;
+  grid-template-columns: 1fr 1fr;
 }
 @media (max-width: 715px) {
   .top-content {
@@ -291,6 +295,8 @@ footer nav .menu-content {
 .top-content .top-content-right img {
   border-bottom-right-radius: 15px;
   border-bottom-left-radius: 15px;
+  height: 100%;
+  object-fit: cover;
 }
 @media (max-width: 715px) {
   .top-content .top-content-right {
@@ -312,7 +318,7 @@ footer nav .menu-content {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #5292FF;
+  background: #636A41;
   text-align: center;
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
@@ -330,7 +336,7 @@ footer nav .menu-content {
   border-left: none;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background: #cfcfcf;
+  background: #D1D1C9;
 }
 @media (max-width: 1000px) {
   .main-content .content-container .content {
@@ -382,14 +388,14 @@ footer nav .menu-content {
 }
 .main-content .portfolio-link .left-bar {
   width: 30%;
-  background-color: #5292FF;
-  background-image: linear-gradient(to right, #5292FF, white);
+  background-color: #636A41;
+  background-image: linear-gradient(to right, #636A41, white);
   border-radius: 15px;
 }
 .main-content .portfolio-link .right-bar {
   width: 30%;
-  background-color: #5292FF;
-  background-image: linear-gradient(to right, white, #5292FF);
+  background-color: #636A41;
+  background-image: linear-gradient(to right, white, #636A41);
   border-radius: 15px;
 }
 .main-content .portfolio-link a {
