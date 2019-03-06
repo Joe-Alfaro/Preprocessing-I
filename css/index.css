@@ -1,6 +1,6 @@
 /* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
+v2.0 | 20110126
+License: none (public domain)
 */
 html,
 body,
@@ -119,11 +119,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-<<<<<<< HEAD
-  content: '';
-=======
   content: "";
->>>>>>> dd506ae4fd7966f639c79c7de0b7e2491ae79cff
   content: none;
 }
 table {
@@ -258,9 +254,9 @@ footer nav .menu-content {
   display: none;
 }
 .top-content {
-  width: 1024px;
+  max-width: 1024px;
   display: inline-grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 50% 50%;
 }
 @media (max-width: 715px) {
   .top-content {
@@ -302,7 +298,7 @@ footer nav .menu-content {
   height: 100%;
   object-fit: cover;
 }
-@media (max-width: 715px) {
+@media (max-width: 820px) {
   .top-content .top-content-right {
     display: none;
   }
